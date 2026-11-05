@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f4ed">
+    <meta name="description" content="Midnight Bistro - Eat More, Pay Less!">
+    <title>Midnight Bistro | Eat More, Pay Less!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Existing files -->
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">☾</span>
+            <span class="logo-text">
+                MIDNIGHT
+                <small>BISTRO</small>
+            </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#event">Anubhuti</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="login-btn" id="loginBtn" type="button">
+                <i class="fa-regular fa-user"></i>
+                <span>Login</span>
+            </button>
+
+            <!-- Instagram: custom SVG, no icon-font dependency -->
+            <a href="https://www.instagram.com/midnight.__.bistro/"
+               class="instagram-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Midnight Bistro on Instagram">
+
+                <svg class="instagram-icon" viewBox="0 0 24 24"
+                     fill="none" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5"
+                          stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4"
+                            stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.5" cy="6.8" r="1.1"
+                            fill="currentColor"/>
+                </svg>
+
+                <span>Instagram</span>
+            </a>
+
+            <button class="cart-btn" id="cartBtn"
+                    type="button" aria-label="Open shopping cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count quantity">0</span>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle"
+                    type="button" aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="event-pill">
+                    ✦ SRMU · STALL NO. 6 ✦
+                </span>
+
+                <p class="hero-small">WELCOME TO</p>
+
+                <h1>
+                    MIDNIGHT
+                    <span>BISTRO</span>
+                </h1>
+
+                <div class="hero-divider">✦ ━━━━━━━━━ ✦</div>
+
+                <h2>Eat More, Pay Less!</h2>
+
+                <p class="hero-description">
+                    Delicious bites, unforgettable moments.
+                    Discover your favourite food at pocket-friendly prices.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        Discover More
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        SRMU Campus
+                    </span>
+                    <span>✦</span>
+                    <span>Stall No. 6</span>
+                </div>
+
+            </div>
+
+            <!-- LOCAL HERO PHOTO -->
+            <div class="hero-art">
+                <img
+                    class="hero-main-image"
+                    src="image/hero-food.jpg"
+                    alt="Midnight Bistro food spread"
+                    fetchpriority="high"
+                >
+                <div class="hero-image-caption">
+                    <span>FRESH FOOD</span>
+                    <strong>GREAT TASTE</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="features">
+
+            <div class="feature">
+                <i class="fa-solid fa-utensils"></i>
+                <div>
+                    <h3>Fresh Food</h3>
+                    <p>Deliciously prepared</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h3>Made with Love</h3>
+                    <p>Every single bite</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div>
+                    <h3>Budget Friendly</h3>
+                    <p>Eat More, Pay Less</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <h3>Amazing Taste</h3>
+                    <p>Made for food lovers</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FOOD MENU -->
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+                <span class="section-kicker">WHAT'S COOKING?</span>
+                <h2>OUR <span>SPECIAL MENU</span></h2>
+                <p>
+                    From street food favourites to delicious cafe specials,
+                    discover something special.
+                </p>
+                <div class="menu-decoration">✦ ━━━━━━━━━━━━━ ✦</div>
+            </div>
+
+            <div class="menu-board">
+
+                <div class="board-heading">
+                    <span>✦ MIDNIGHT BISTRO ✦</span>
+                    <h3>EXPLORE OUR MENU</h3>
+                    <p>EAT MORE, PAY LESS!</p>
+                </div>
+
+                <div class="menu-filters" id="menuFilters">
+
+                    <button class="filter-btn active" data-category="All">
+                        All Items
+                    </button>
+
+                    <button class="filter-btn" data-category="Momos">
+                        Momos
+                    </button>
+
+                    <button class="filter-btn" data-category="Noodles">
+                        Noodles
+                    </button>
+
+                    <button class="filter-btn" data-category="Pizza">
+                        Pizza
+                    </button>
+
+                    <button class="filter-btn" data-category="Burger">
+                        Burgers
+                    </button>
+
+                    <button class="filter-btn" data-category="Pasta">
+                        Pasta
+                    </button>
+
+                    <button class="filter-btn" data-category="Dessert">
+                        Desserts
+                    </button>
+
+                    <button class="filter-btn" data-category="Drinks">
+                        Drinks
+                    </button>
+
+                </div>
+
+                <!-- Products generated by web.js -->
+                <div class="product-grid" id="productList"></div>
+
+                <div class="board-footer">
+                    ✦ MADE WITH LOVE · SERVED WITH HAPPINESS ✦
+                </div>
+
+            </div>
+
+            <p class="menu-note">
+                All prices are in Indian Rupees (₹).
+            </p>
+
+        </section>
+
+
+        <!-- OFFER -->
+        <section class="offer-section">
+
+            <div class="offer-content">
+                <span class="section-kicker">GOOD FOOD, GOOD MOOD</span>
+
+                <h2>
+                    GOOD FOOD.<br>
+                    GREAT MOMENTS.
+                </h2>
+
+                <p>
+                    Your favourite food doesn't have to be expensive.
+                    Enjoy more flavours while spending less.
+                </p>
+
+                <a href="#menu" class="btn btn-primary">
+                    View Full Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span class="section-kicker">OUR STORY</span>
+
+                <h2>
+                    MORE THAN FOOD.<br>
+                    <span>IT'S A VIBE!</span>
+                </h2>
+
+                <p>
+                    Welcome to Midnight Bistro, where great food
+                    and good vibes come together.
+                </p>
+
+                <p>
+                    From delicious momos and noodles to pizza,
+                    burgers, pasta, desserts and refreshing drinks,
+                    there is something for every food lover.
+                </p>
+
+                <div class="about-points">
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Delicious Food
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Pocket-Friendly Prices
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Great Campus Vibes
+                    </div>
+
+                </div>
+
+                <a href="#menu" class="btn btn-primary">
+                    Explore Menu
+                </a>
+
+            </div>
+
+            <!-- LOCAL ABOUT PHOTO -->
+            <div class="about-art">
+                <img
+                    src="image/about-food.jpg"
+                    alt="Food spread at Midnight Bistro"
+                    loading="lazy"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- EVENT -->
+        <section class="event-section" id="event">
+
+            <div class="event-card">
+
+                <span class="section-kicker">
+                    OUR CAMPUS FOOD JOURNEY
+                </span>
+
+                <h2>ANUBHUTI <span>2026</span></h2>
+
+                <p class="event-university">
+                    Shri Ramswaroop Memorial University
+                </p>
+
+                <div class="event-details">
+
+                    <div>
+                        <i class="fa-regular fa-calendar"></i>
+                        <strong>19–21 February 2026</strong>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>SRMU Campus</strong>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-store"></i>
+                        <strong>Stall No. 6</strong>
+                    </div>
+
+                </div>
+
+                <h3>EAT MORE, PAY LESS!</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+
+            <div class="section-heading">
+
+                <span class="section-kicker">CONNECT WITH US</span>
+                <h2>LET'S <span>CONNECT!</span></h2>
+
+                <p>
+                    Have a question or feedback? Send us a message.
+                    We'd love to hear from you.
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Shri Ramswaroop Memorial University</p>
+                            <strong>Stall No. 6</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <svg class="instagram-icon" viewBox="0 0 24 24"
+                             fill="none" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"
+                                  stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="12" cy="12" r="4"
+                                    stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="17.5" cy="6.8" r="1.1"
+                                    fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>Follow Midnight Bistro</p>
+                            <a href="https://www.instagram.com/midnight.__.bistro/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Visit Instagram ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Send a Message</h3>
+                            <p>We welcome your feedback.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <h3>Send Us a Message</h3>
+
+                    <input type="text"
+                           id="contactName"
+                           placeholder="Your Name"
+                           required>
+
+                    <input type="email"
+                           id="contactEmail"
+                           placeholder="Your Email"
+                           required>
+
+                    <input type="text"
+                           id="contactSubject"
+                           placeholder="Subject"
+                           required>
+
+                    <textarea id="contactMessage"
+                              rows="5"
+                              placeholder="Write your message..."
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    ☾ MIDNIGHT BISTRO
+                </a>
+
+                <p>
+                    Eat More, Pay Less!
+                    Good food and great memories.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/midnight.__.bistro/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+
+                        <svg class="instagram-icon" viewBox="0 0 24 24"
+                             fill="none" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"
+                                  stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="12" cy="12" r="4"
+                                    stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="17.5" cy="6.8" r="1.1"
+                                    fill="currentColor"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Opening Information</h3>
+                <p>SRMU Campus</p>
+                <p>Stall No. 6</p>
+                <p>Anubhuti 2026</p>
+                <p>19–21 February 2026</p>
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h3>Join Our Newsletter</h3>
+
+                <p>
+                    Stay connected with Midnight Bistro.
+                </p>
+
+                <form id="newsletterForm">
+
+                    <input type="email"
+                           id="newsletterEmail"
+                           placeholder="Your email address"
+                           required>
+
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Midnight Bistro. All Rights Reserved.</p>
+            <a href="#home">Back to Top ↑</a>
+        </div>
+
+    </footer>
+
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- SHOPPING CART -->
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <div>
+                <span class="section-kicker">YOUR SELECTION</span>
+                <h2>Your Shopping Cart</h2>
+            </div>
+
+            <button class="close-cart"
+                    id="closeCart"
+                    type="button"
+                    aria-label="Close cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items listCard" id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is currently empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total Amount</span>
+                <strong class="total">₹0</strong>
+            </div>
+
+            <button class="checkout-btn"
+                    id="checkoutBtn"
+                    type="button">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- LOGIN / SIGNUP MODAL -->
+    <div class="modal-overlay" id="loginOverlay">
+
+        <div class="login-modal">
+
+            <button class="modal-close"
+                    id="closeLogin"
+                    type="button"
+                    aria-label="Close login">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h2>Welcome to Midnight Bistro!</h2>
+            <p>Sign in or create an account.</p>
+
+
+            <div class="auth-tabs">
+
+                <button type="button"
+                        class="auth-tab active"
+                        data-auth="login">
+                    Login
+                </button>
+
+                <button type="button"
+                        class="auth-tab"
+                        data-auth="signup">
+                    Sign Up
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN -->
+            <form id="loginForm" class="auth-form">
+
+                <label for="loginEmail">Email Address</label>
+
+                <input type="email"
+                       id="loginEmail"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="loginPassword">Password</label>
+
+                <input type="password"
+                       id="loginPassword"
+                       placeholder="Enter your password"
+                       minlength="6"
+                       required>
+
+                <button type="submit"
+                        class="btn btn-primary login-submit">
+                    Login Now
+                </button>
+
+            </form>
+
+
+            <!-- SIGNUP -->
+            <form id="signupForm" class="auth-form" hidden>
+
+                <label for="signupName">Full Name</label>
+
+                <input type="text"
+                       id="signupName"
+                       placeholder="Enter your name"
+                       required>
+
+                <label for="signupEmail">Email Address</label>
+
+                <input type="email"
+                       id="signupEmail"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="signupPassword">Create Password</label>
+
+                <input type="password"
+                       id="signupPassword"
+                       placeholder="Minimum 6 characters"
+                       minlength="6"
+                       required>
+
+                <button type="submit"
+                        class="btn btn-primary login-submit">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast-message"
+         role="status"
+         aria-live="polite">
+    </div>
+
+</body>
+</html>
